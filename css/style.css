@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flossie's Bakehouse</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="img/favicon.png">
+  <link rel="apple-touch-icon" href="img/favicon.png">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Embedded CSS -->
+  <style>
+    /* Reset */
+    * {margin:0;padding:0;box-sizing:border-box;}
+
+    /* Fonts & Body */
+    body {font-family:'Poppins', sans-serif;background-color:#fff9f4;color:#6b4f37;text-align:center;line-height:1.6;}
+    h1,h2,h3 {font-family:'Playfair Display', serif;color:#6b4f37;margin-bottom:15px;}
+    a {text-decoration:none;color:#6b4f37;transition:0.3s;}
+    a:hover {color:#c9a06a;}
+
+    /* Header */
+    header {background:#fff;padding:30px 20px;text-align:center;box-shadow:0 2px 10px rgba(0,0,0,0.05);position:sticky;top:0;z-index:1000;}
+    .logo-container img {height:120px;display:block;margin:0 auto;}
+    nav {margin-top:15px;}
+    nav a {margin:0 12px;padding:5px 10px;font-weight:600;border-radius:8px;}
+    nav a:hover {background-color:#f8e4e9;color:#6b4f37;}
+
+    /* Hero Section */
+    .hero {padding:100px 20px;background-color:#f8e4e9;}
+    .hero h1 {font-size:48px;margin-bottom:20px;}
+    .hero p {font-size:20px;margin-bottom:20px;}
+    .hero .btn {display:inline-block;padding:12px 25px;background-color:#c9a06a;color:#fff9f4;font-weight:600;border-radius:8px;}
+    .hero .btn:hover {background-color:#6b4f37;}
+
+    /* About Snippet */
+    .about-snippet {padding:80px 20px;}
+    .about-snippet p {max-width:700px;margin:0 auto 20px auto;}
+    .about-snippet .btn {background-color:#f8e4e9;color:#6b4f37;padding:10px 20px;border-radius:8px;font-weight:600;}
+    .about-snippet .btn:hover {background-color:#c9a06a;color:#fff9f4;}
+
+    /* Featured Cakes */
+    .featured-cakes {padding:80px 20px;background-color:#fff9f4;}
+    .featured-cakes h2 {margin-bottom:40px;}
+    .cake-grid {display:flex;justify-content:center;flex-wrap:wrap;gap:30px;}
+    .cake-card {background:#fff;border-radius:14px;padding:20px;width:250px;box-shadow:0 2px 10px rgba(0,0,0,0.1);}
+    .cake-card img {width:100%;border-radius:14px;margin-bottom:15px;}
+
+    /* Gallery */
+    .gallery-grid {display:flex;justify-content:center;flex-wrap:wrap;gap:20px;padding:40px 20px;}
+    .gallery-grid img {width:250px;border-radius:12px;box-shadow:0 2px 10px rgba(0,0,0,0.1);}
+
+    /* Contact Form */
+    form {max-width:500px;margin:20px auto;display:flex;flex-direction:column;gap:15px;}
+    input,textarea {padding:12px;border-radius:8px;border:1px solid #ccc;font-family:'Poppins',sans-serif;}
+    button {padding:12px;background-color:#c9a06a;color:#fff9f4;font-weight:600;border:none;border-radius:8px;cursor:pointer;}
+    button:hover {background-color:#6b4f37;}
+
+    /* Socials */
+    .social-links {list-style:none;display:flex;justify-content:center;gap:20px;padding:20px 0;}
+    .social-links a {padding:10px 15px;border-radius:8px;background-color:#f8e4e9;color:#6b4f37;font-weight:600;}
+    .social-links a:hover {background-color:#c9a06a;color:#fff9f4;}
+
+    /* Footer */
+    footer {padding:20px;background-color:#6b4f37;color:#fff9f4;margin-top:50px;}
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo-container">
+      <img src="img/LOGO.png" alt="Flossie's Bakehouse Logo">
+    </div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#menu">Menu</a>
+      <a href="#about">About</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+      <a href="#socials">Socials</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <h1>Welcome to Flossie's Bakehouse</h1>
+    <p>Delicious cakes, cupcakes, and treats made with love.</p>
+    <a href="#menu" class="btn">Explore Our Menu</a>
+  </section>
+
+  <!-- About Snippet -->
+  <section class="about-snippet" id="about">
+    <h2>About Us</h2>
+    <p>Flossie’s Bakehouse is all about crafting cozy, delicious desserts with a touch of love and creativity. We bake every treat fresh daily and make sure every bite brings a smile!</p>
+    <a href="#about" class="btn">Learn More</a>
+  </section>
+
+  <!-- Menu Section -->
+  <section class="featured-cakes" id="menu">
+    <h2>Our Favorites</h2>
+    <div class="cake-grid">
+      <div class="cake-card">
+        <img src="img/image1.png" alt="Chocolate Delight">
+        <h3>Chocolate Delight - $25</h3>
+      </div>
+      <div class="cake-card">
+        <img src="img/image2.png" alt="Vanilla Dream">
+        <h3>Vanilla Dream - $22</h3>
+      </div>
+      <div class="cake-card">
+        <img src="img/image3.png" alt="Strawberry Bliss">
+        <h3>Strawberry Bliss - $24</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section class="gallery" id="gallery">
+    <h2>Gallery</h2>
+    <p>Take a look at some of our beautifully crafted cakes!</p>
+    <div class="gallery-grid">
+      <img src="img/image1.png" alt="Cake 1">
+      <img src="img/image2.png" alt="Cake 2">
+      <img src="img/image3.png" alt="Cake 3">
+      <img src="img/image4.png" alt="Cake 4">
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <p>We’d love to hear from you! Fill out the form below or reach us via social media.</p>
+    <form action="https://formspree.io/f/mpwkawwy" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Socials Section -->
+  <section class="socials" id="socials">
+    <h2>Follow Us</h2>
+    <p>Stay connected and see our latest creations!</p>
+    <ul class="social-links">
+      <li><a href="https://www.instagram.com/flossiesbakehouse_/" target="_blank">Instagram</a></li>
+      <li><a href="#" target="_blank">Facebook</a></li>
+      <li><a href="#" target="_blank">TikTok</a></li>
+    </ul>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Flossie's Bakehouse</p>
+  </footer>
+
+</body>
+</html>
