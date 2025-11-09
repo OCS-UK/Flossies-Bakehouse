@@ -154,6 +154,50 @@
     </ul>
   </section>
 
+/* CTA Section */
+.cta {
+  background-color: #f8e4e9; /* soft pink background */
+  padding: 80px 20px;
+  text-align: center;
+  border-radius: 16px;
+  margin: 60px auto;
+  max-width: 900px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.cta h2 {
+  color: #6b4f37; /* warm brown */
+  font-size: 32px;
+  margin-bottom: 20px;
+  font-family: 'Playfair Display', serif;
+}
+
+.cta p {
+  color: #6b4f37;
+  max-width: 650px;
+  margin: 0 auto 25px;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.cta .btn {
+  display: inline-block;
+  padding: 14px 28px;
+  background-color: #c9a06a; /* gold accent */
+  color: #fff9f4;
+  font-weight: 600;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.cta .btn:hover {
+  background-color: #6b4f37; /* dark brown hover */
+  transform: translateY(-2px);
+}
+
+
+
   <!-- Footer -->
   <footer>
     <p>© 2025 Flossie's Bakehouse</p>
